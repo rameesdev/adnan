@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adnan's Animation</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+            overflow: hidden;
+        }
+
+        .container {
+            position: relative;
+            text-align: center;
+        }
+
+        .container img {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            animation: rotate 5s infinite linear, zoom 5s infinite alternate;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .name {
+            position: absolute;
+            bottom: -50px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 2rem;
+            font-family: 'Arial', sans-serif;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateX(-50%) translateY(0);
+            }
+            50% {
+                transform: translateX(-50%) translateY(-20px);
+            }
+        }
+
+        @keyframes zoom {
+            from {
+                transform: scale(1);
+            }
+            to {
+                transform: scale(1.2);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <img src="adnan.jpg" alt="Adnan">
+    <div class="name">Adnan</div>
+</div>
+
+<!-- Background music -->
+<audio autoplay loop>
+    <source src="<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adnan's Animation</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+            overflow: hidden;
+        }
+
+        .container {
+            position: relative;
+            text-align: center;
+        }
+
+        .container img {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            animation: rotate 2s infinite linear, zoom 5s infinite alternate;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .name {
+            position: absolute;
+            bottom: -50px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 2rem;
+            font-family: 'Arial', sans-serif;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            animation: bounce 1s infinite;
+        }
+
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateX(-50%) translateY(0);
+            }
+            50% {
+                transform: translateX(-50%) translateY(-20px);
+            }
+        }
+
+        @keyframes zoom {
+            from {
+                transform: scale(100);
+                rotate: 0deg;
+            }
+            to {
+                transform: scale(1);
+                rotate: 360deg;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <img src="adnan.jpg" alt="Adnan" onclick="playAudio">
+    <div class="name">Adnan</div>
+</div>
+
+<!-- Background music -->
+<audio autoplay loop id="audio">
+    <source src="moggers.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+</audio>
+
+   <script>
+    window.document.onclick=()=>{
+        console.log('hi')
+        playAudio()
+        alert('adnan loves you');
+        
+    }
+    function playAudio() {
+        var audio = document.getElementById("audio");
+        if (audio.paused) {
+            audio.play();
+        } else {
+            audio.pause();  // This will toggle play/pause
+        }
+    }
+</script>
+
+</body>
+</html>
